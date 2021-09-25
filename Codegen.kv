@@ -1,0 +1,102 @@
+MainUI:
+
+<MainUI>:
+    orientation: 'vertical'
+    BoxLayout:
+        padding: (dp(10), dp(10), dp(10), dp(10))
+        BoxLayout:
+            padding: (dp(10), dp(10), dp(10), dp(10))
+            orientation: 'vertical'
+            ToggleButton:
+                text: 'Symbols'
+                font_name: 'fonts/jb_normal.ttf'
+                group: 'char'
+                id: symbolstate
+                state: 'down'
+            ToggleButton:
+                text: 'Alphanumeric'
+                font_name: 'fonts/jb_normal.ttf'
+                group: 'char'
+                id: alphastate
+            ToggleButton:
+                text: 'PIN'
+                font_name: 'fonts/jb_normal.ttf'
+                group: 'char'
+                id: pinstate
+
+
+        BoxLayout:
+            padding: (dp(10), dp(10), dp(10), dp(10))
+            BoxLayout:
+
+                orientation: 'vertical'
+                BoxLayout:
+                    padding: (dp(0), dp(0), dp(0), dp(10))
+                    TextInput:
+                        hint_text: 'Length'
+                        padding: (dp(10), dp(10), dp(10), dp(10))
+                        text: root.leninputtext
+                        multiline: False
+                        font_name: 'fonts/jb_normal.ttf'
+                        font_size: 15
+                        halign: 'center'
+                        id: lengthinput
+                BoxLayout:
+                    padding: (dp(0), dp(10), dp(0), dp(0))
+                    Button:
+                        text: '+'
+                        font_name: 'fonts/jb_normal.ttf'
+                        font_size: 25
+                        on_press: root.plus()
+                    Button:
+                        text: '-'
+                        font_name: 'fonts/jb_normal.ttf'
+                        font_size: 25
+                        on_press: root.minus()
+            BoxLayout:
+                padding: (dp(20), dp(0), dp(0), dp(0))
+                orientation: 'vertical'
+                BoxLayout:
+                    padding: (dp(0), dp(0), dp(0), dp(10))
+                    Button:
+
+                        font_name: 'fonts/jb_normal.ttf'
+                        on_press: root.copy()
+                        Image:
+                            source: 'copy.png'
+                            # https://www.flaticon.com/free-icon/copy_1621635
+                            y: self.parent.y + 9
+                            x: self.parent.x + 28
+                            size: 22, 22
+                BoxLayout:
+                    padding: (dp(0), dp(10), dp(0), dp(0))
+                    Button:
+                        font_name: 'fonts/jb_normal.ttf'
+                        on_press: root.generate()
+                        Image:
+                            source: 'shuffle.png'
+                            # https://www.flaticon.com/free-icon/shuffle_359735
+                            y: self.parent.y + 9
+                            x: self.parent.x + 28
+                            size: 22, 22
+
+
+    BoxLayout:
+        padding: (dp(20), dp(0), dp(20), dp(0))
+        TextInput:
+            scroll_y: 4
+            readonly: True
+            padding: (dp(10), dp(10), dp(10), dp(10))
+            font_name: 'fonts/jb_italic.ttf'
+            font_size: 20
+            id: outputbox
+            text: root.outputtext
+
+    BoxLayout:
+        size_hint: 1, .2
+        padding: (dp(0), dp(0), dp(0), dp(5))
+        Label:
+            text: 'v1.0   '
+            font_name: 'fonts/jb_normal.ttf'
+            text_size: self.size
+            halign: 'right'
