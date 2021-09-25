@@ -28,6 +28,12 @@ A counter is included to specify the length of the password
 The entirety of the code has no connection to the internet and does not save any of your passwords into a file, so they are 100% secure.
 
 
+## Credits
+
+Code and logo by <a href="https://github.com/daqnal" title="Daqnal">Daqnal
+<div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+## 
 
 < Updated: v1.0 >
 
