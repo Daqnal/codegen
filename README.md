@@ -5,7 +5,7 @@ Codegen is a simple yet advanced password and PIN generator.
 ![python_c3XFyaJC6Z](https://user-images.githubusercontent.com/49793238/134781654-cd138f38-eb9e-43e2-a4c8-ab2d8be6506b.png)
 
 It can generate 3 types of passwords:
-- Symbolic (Any character that can be typed on a standard WASD keyboard)
+- Symbolic (Any character that can be typed on a standard QWERTY keyboard)
 
 ![image](https://user-images.githubusercontent.com/49793238/134781721-6f26641d-c559-4e66-b416-0d5530d1acc2.png)
 
@@ -21,9 +21,9 @@ It can generate 3 types of passwords:
 
 
 
-As well as the ability to copy the text by selection, there is a button that will automatically copy the password.
-
 A counter is included to specify the length of the password
+
+As well as the ability to copy the text by selection, there is a button that will automatically copy the password.
 
 The entirety of the code has no connection to the internet and does not save any of your passwords into a file, so they are 100% secure.
 
