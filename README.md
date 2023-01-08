@@ -1,6 +1,6 @@
 # Codegen
 
-Codegen is a simple yet advanced password and PIN generator.
+Codegen is a simple password and PIN generator made using Python with the Kivy framework for GUI.
 
 ![python_c3XFyaJC6Z](https://user-images.githubusercontent.com/49793238/134781654-cd138f38-eb9e-43e2-a4c8-ab2d8be6506b.png)
 
